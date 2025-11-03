@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гірські Пригоди світу</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #664caf;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: rgb(97, 94, 94);
+            padding: 14px 20px;
+            float: left;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #bebdbd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .mountain {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+        .mountain img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .details {
+            display: none;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color:  #664caf;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:  #664caf;;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color:  #664caf;;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Гірські Пригоди світу</h1>
+    <p>Відкрийте для себе найвищі та найкрасивіші гори світу!</p>
+</header>
+
+<nav>
+    <a href="#everest">Еверест</a>
+    <a href="#alp">Альпи</a>
+    <a href="#matterhorn">Маттерхорн</a>
+</nav>
+
+<div class="container">
+
+    <!-- Еверест -->
+    <div id="everest" class="mountain">
+        <h2>Еверест, Непал/Тибет</h2>
+        <img src="images/1.jpeg" alt="Еверест">
+        <p>Найвища гора світу — 8848 м. Популярна серед альпіністів та туристів.</p>
+        <button onclick="toggleDetails('everestDetails')">Дізнатися більше</button>
+        <div id="everestDetails" class="details">
+            <p><strong>Еверест</strong> розташований у Гімалаях. Висота вершини постійно змінюється через рухи земної кори. 
+            Підйом на гору вимагає високої підготовки та акліматизації.</p>
+            <ul>
+                <li><b>Висота:</b> 8848 м — найвища точка планети.</li>
+                <li><b>Назва:</b> британці назвали на честь Джорджа Евереста, а місцеві — Сагарматха («Богиня неба») або Джомолунгма («Свята мати світу»).</li>
+                <li><b>Цікаві факти:</b> температура на вершині сягає -60°C, перше сходження — 1953 року (Едмунд Гілларі та Тенцинг Норґей).</li>
+                <li><b>Пейзаж:</b> вкриті льодовики, глибокі ущелини, буддистські монастирі.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Альпи -->
+    <div id="alp" class="mountain">
+        <h2>Альпи, Європа</h2>
+        <img src="images/2.jpeg" alt="Альпи">
+        <p>Європейські Альпи — популярне місце для лижного спорту та гірських походів.</p>
+        <button onclick="toggleDetails('alpDetails')">Дізнатися більше</button>
+        <div id="alpDetails" class="details">
+            <p></strong>Альпи</strong> простягаються через Францію, Швейцарію, Італію, Німеччину, Австрію, Словенію та Ліхтенштейн. 
+            <li><b>Найвища вершина</b> — Монблан (4808 м). Альпи славляться своїми льодовиками, альпійськими луками і курортами, 
+            такими як Церматт, Інсбрук і Шамоні.</p>
+        </div>
+    </div>
+
+    <!-- Маттерхорн -->
+    <div id="matterhorn" class="mountain">
+        <h2>Маттерхорн, Швейцарія</h2>
+        <img src="images/3.jpeg" alt="Маттерхорн">
+        <p>Символ Швейцарії та популярна вершина для альпіністів і фотографів.</p>
+        <button onclick="toggleDetails('matterhornDetails')">Дізнатися більше</button>
+        <div id="matterhornDetails" class="details">
+            <p><strong>Маттерхорн</strong> має висоту 4478 метрів і відомий своєю унікальною пірамідальною формою. 
+            Розташований на кордоні Швейцарії та Італії. Підйом є складним через круті схили та непередбачувану погоду. 
+            У підніжжі гори розташоване мальовниче село Церматт. Маттергорн (Швейцарія)
+
+Висота: 4478 м.
+
+<li></b>Форма:</b> ідеальний пірамідальний пік — одна з найвідоміших гір Європи.
+Символ Альп і Швейцарії.
+Дуже складна для сходження — навіть досвідчені альпіністи часто не доходять до вершини.
+Зображення Маттергорну є на шоколаді Toblerone. Гострі скелі, льодовики, озера й казкові шале навколо.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 Гірські пригоди світу.</p>
+     <p><strong>Редактор даного сайту Даниїл<strong></p>
+</footer>
+
+<script>
+    function toggleDetails(id) {
+        const element = document.getElementById(id);
+        element.style.display = element.style.display === "block" ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
